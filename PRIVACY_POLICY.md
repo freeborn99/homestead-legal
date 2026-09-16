@@ -60,6 +60,19 @@ independent controller. See:
 Google Play Services is also used for app distribution, update delivery and Android
 platform integrity, under Google's own privacy policy.
 
+### Your advertising consent (EEA, UK, Switzerland and US state privacy laws)
+
+Where the law requires it, the Game asks for your consent before it requests any ad, using
+Google's **User Messaging Platform (UMP)**. On first launch in a region that requires
+consent you are shown a consent form, and **no ad is requested and no advertising SDK is
+initialised until you have made your choice**. If you decline personalised advertising, ads
+are either not shown or served in a non-personalised form, and the Game remains fully
+playable.
+
+You can change or withdraw your choice at any time: open the **⚡ Farm Boost Center** in the
+Game and tap **"Ad privacy settings"**. This reopens the same privacy options form (Google
+requires that withdrawing consent be as easy as giving it).
+
 ## 4. How information is used
 
 - **Locally stored game data** is used only to run the Game and to restore your farm when
@@ -79,6 +92,8 @@ transfer your save data to anyone.
 - **Personalised advertising:** you can limit ad personalisation in
   Android **Settings → Privacy → Ads**, where you can also reset or delete your advertising
   ID. Google's ad settings are at <https://adssettings.google.com>.
+- **Consent choices:** in the Game, open the **⚡ Farm Boost Center → "Ad privacy settings"**
+  to change or withdraw your advertising consent at any time.
 - **Ads in the Game:** every ad is opt-in. Declining or cancelling an ad never blocks
   gameplay and never charges you anything.
 - **Notifications and permissions:** the Game does not request notification, camera,
