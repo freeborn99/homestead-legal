@@ -14,13 +14,16 @@ applies to the Game itself and not to any other service.
 
 ## 1. Summary
 
-- Your farm progress is saved **only on your own device**. We do not have accounts, and we
-  do not run a server that receives your save data.
-- We do **not** collect your name, email address, phone number, contacts, photos, files or
-  precise location, and we do not ask you to create a login.
+- Your farm progress is saved **on your own device** by default. You do not need an account
+  and the Game works fully offline.
+- You may **optionally** sign in with Google to back your farm up to the cloud and compare
+  stats with other players. If you never sign in, we receive nothing at all — see section 4.
+- We do **not** collect your phone number, contacts, photos, files or precise location, and
+  we do not ask you to create a username or password.
 - The Game shows **optional rewarded video ads** through Google AdMob. To do that, Google
   may collect device and advertising information as described in section 3.
-- You can erase everything the Game stores by clearing the app's storage or uninstalling it.
+- You can erase everything the Game stores by clearing the app's storage or uninstalling it,
+  and you can delete your cloud backup and profile at any time (section 9).
 
 ## 2. Information stored on your device
 
@@ -73,7 +76,38 @@ You can change or withdraw your choice at any time: open the **⚡ Farm Boost Ce
 Game and tap **"Ad privacy settings"**. This reopens the same privacy options form (Google
 requires that withdrawing consent be as easy as giving it).
 
-## 4. How information is used
+## 4. Optional Google account and cloud save
+
+The Game is fully playable **without** an account. If you choose to sign in with Google, we
+use **Google Firebase Authentication** and **Cloud Firestore** (Google LLC) to offer cloud
+backup of your farm. Signing in is optional and can be undone at any time.
+
+If you sign in, the following is stored for you:
+
+- your Firebase **user ID** (a long random identifier, not your name or email),
+- the **display name** and **email address** attached to the Google account you sign in with,
+  which we receive from Google,
+- a **copy of your farm save** (the same progress data described in section 2), so it can be
+  restored on another device,
+- a small **public profile** used for the optional friends ranking: your farm name, era,
+  lifetime Labor, Blue Ribbons, building count and play time. Farm names are limited to 24
+  characters, and there is no chat, comment or free-text feature.
+
+What we do **not** do with it:
+
+- we do not sell it, we do not use it for advertising, and we do not share it with anyone
+  other than Google as our hosting provider;
+- we do not read your save contents for any purpose other than storing them and returning
+  them to you;
+- your save is protected by security rules so that **only your own signed-in account can read
+  or write it**. The friends-ranking profile is readable by other signed-in players; your save
+  is not.
+
+Google's handling of Firebase data is described in Google's Privacy Policy
+(<https://policies.google.com/privacy>) and the Firebase privacy documentation
+(<https://firebase.google.com/support/privacy>).
+
+## 5. How information is used
 
 - **Locally stored game data** is used only to run the Game and to restore your farm when
   you come back.
@@ -81,13 +115,13 @@ requires that withdrawing consent be as easy as giving it).
   shown in the Game, to prevent ad fraud, and to pay us for the ad impressions that keep
   the Game free.
 
-## 5. Sharing and selling
+## 6. Sharing and selling
 
 We do not sell your personal information. We do not share information with third parties
 other than the advertising and platform providers described in section 3, and we do not
 transfer your save data to anyone.
 
-## 6. Your choices and controls
+## 7. Your choices and controls
 
 - **Personalised advertising:** you can limit ad personalisation in
   Android **Settings → Privacy → Ads**, where you can also reset or delete your advertising
@@ -100,26 +134,32 @@ transfer your save data to anyone.
   microphone, contacts or precise-location access.
 - **Purchases:** this version contains no in-app purchases and no real-money transactions.
 
-## 7. Data retention
+## 8. Data retention
 
-Locally stored game data remains on your device until you delete it. We hold no copy of it,
-so there is no server-side retention period for us to apply. Advertising data is retained by
-Google according to its own policies (see the links in section 3).
+Locally stored game data remains on your device until you delete it. If you have signed in,
+your cloud backup and public profile remain in Firestore until you delete them (section 9) —
+we keep them only so that a restore is possible. Advertising data is retained by Google
+according to its own policies (see the links in section 3).
 
-## 8. Deleting your data
+## 9. Deleting your data
 
 You are in full control of the data the Game stores:
 
 - **On your device:** Android **Settings → Apps → Homestead → Storage → Clear storage**
   deletes all local game data, or uninstalling the Game removes it entirely. This cannot be
-  undone, and because we hold no copy of your save, we cannot restore it for you.
+  undone, and because we hold no copy of your local save, we cannot restore it for you.
+- **Cloud backup and profile (only if you signed in):** sign in, then use
+  **Help → Cloud Save → Delete cloud backup**, which erases your stored save and public
+  profile from Firestore immediately. You can also email us at **casayoung.dev@gmail.com**
+  from the address on the Google account you used, and we will delete them for you. Signing
+  out stops all further syncing but leaves the existing backup until you delete it.
 - **Advertising data:** reset or delete your advertising ID in Android
   **Settings → Privacy → Ads**, and use Google's ad settings for ad personalisation.
 
 If you would like help with a data question, email us at **casayoung.dev@gmail.com** and we
 will respond as quickly as we can.
 
-## 9. Children's privacy
+## 10. Children's privacy
 
 Homestead is family-friendly and rated **Everyone (PEGI 3 / ESRB E)**. It is not directed to
 children under 13 (or the equivalent minimum age in your country), and we do not knowingly
@@ -127,7 +167,7 @@ collect personal information from children. The Game has no accounts, no chat, n
 user-generated content and no social features. If you believe a child has provided personal
 information to us, contact us and we will delete it.
 
-## 10. International users
+## 11. International users
 
 The Game can be played anywhere. If you are in the European Economic Area, the United
 Kingdom, Switzerland, California or another region with data-protection laws, you may have
@@ -138,19 +178,19 @@ you, requests about advertising data are handled by Google through the controls 
 in is your consent (for personalised ads, where required) and our legitimate interest in
 funding a free game with advertising.
 
-## 11. Security
+## 12. Security
 
 Game data stays on your device and is protected by Android's app sandbox. Because we do not
 collect it, there is no server-side store of player data to breach. Ad transmission
 (including any data sent to Google) uses encrypted connections.
 
-## 12. Changes to this policy
+## 13. Changes to this policy
 
 If this policy changes, the updated version will be published at this page with a new
 "Last updated" date. Material changes will also be noted in the Game's release notes on
 Google Play. Continuing to play after an update means you accept the revised policy.
 
-## 13. Contact us
+## 14. Contact us
 
 Casayoung Development
 Email: **casayoung.dev@gmail.com**
