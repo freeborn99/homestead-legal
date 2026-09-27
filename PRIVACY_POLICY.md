@@ -148,11 +148,13 @@ You are in full control of the data the Game stores:
 - **On your device:** Android **Settings → Apps → Homestead → Storage → Clear storage**
   deletes all local game data, or uninstalling the Game removes it entirely. This cannot be
   undone, and because we hold no copy of your local save, we cannot restore it for you.
-- **Cloud backup and profile (only if you signed in):** sign in, then use
-  **Help → Cloud Save → Delete cloud backup**, which erases your stored save and public
-  profile from Firestore immediately. You can also email us at **casayoung.dev@gmail.com**
-  from the address on the Google account you used, and we will delete them for you. Signing
-  out stops all further syncing but leaves the existing backup until you delete it.
+- **Cloud backup, profile and name reservation (only if you signed in):** tap the **profile
+  button in the top bar** (it shows your name once signed in), then **🗑️ Delete cloud data**.
+  That erases your stored save, your public ranking profile and your farm-name reservation
+  from Firestore immediately. You can also email us at **casayoung.dev@gmail.com** from the
+  address on the Google account you used and we will delete them within 30 days. Signing out
+  stops all further syncing but leaves the existing backup until you delete it. Full
+  step-by-step instructions: <https://freeborn99.github.io/homestead-legal/delete-account.html>
 - **Advertising data:** reset or delete your advertising ID in Android
   **Settings → Privacy → Ads**, and use Google's ad settings for ad personalisation.
 
